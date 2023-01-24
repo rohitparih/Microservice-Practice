@@ -1,0 +1,32 @@
+{
+    "fields": [
+        {
+            "label": "Name",
+            "placeholder": "Enter your Name",
+            "color": "#ede7f6",
+            "type": "text",
+            "constraint": "name"
+        },
+        {
+            "label": "Email",
+            "placeholder": "Enter your Email",
+            "color": "#ede7f6",
+            "type": "email",
+            "constraint": "email"
+        },
+        {
+            "label": "Username",
+            "placeholder": "Enter Username",
+            "color": "#ede7f6",
+            "type": "text",
+            "constraint": "username"
+        },
+        {
+            "label": "Password",
+            "placeholder": "Enter Password",
+            "color": "#ede7f6",
+            "type": "password",
+            "constraint": "password"
+        }
+    ]
+}

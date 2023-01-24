@@ -1,0 +1,15 @@
+.leftSide p:first-child{
+    
+}
+
+.leftSide p:last-child{
+    color: antiquewhite;
+}
+
+.titleData-1{
+    color: aliceblue;
+}
+
+.titleData-2{
+    color: bisque;
+}
