@@ -1,0 +1,9 @@
+com\userModule\registerModule\Entity\Register.class
+com\userModule\registerModule\Entity\Register$RegisterBuilder.class
+com\userModule\registerModule\Constants\Constants.class
+com\userModule\registerModule\Controller\registerController.class
+com\userModule\registerModule\DataTransfer\registerDto.class
+com\userModule\registerModule\Repository\registerRepository.class
+com\userModule\registerModule\Implementation\registerImplementation.class
+com\userModule\registerModule\Service\registerService.class
+com\userModule\registerModule\RegisterModuleApplication.class

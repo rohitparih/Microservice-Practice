@@ -1,0 +1,42 @@
+server:
+  port: 7008
+
+spring:
+  application:
+    name: SM-TAG-SERVICE-API
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://localhost:9411
+  datasource:
+    url: jdbc:mysql://localhost:3306/bloggios
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+eureka:
+  instance:
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 4
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value:
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgqUrqX5Soz+MoGxzlnYo
+          c45Ep50n1XDbybjSaSAV4i7cDKsW9iW/d4B2agQ6xf3SMYnoqrHZKaPzNQLAiYgy
+          L7Jwq1SxfMe1U0N4jKbo2B1nDDbLRZfVGreZQhwjamlEM8QsVpOh6Mf0Wy6sinT0
+          gP57gLF2Ez7q+PWWOz6xEEwl4/8CS0oWroEz1x8lwDrCERfC/56Kha4ToADIAjPo
+          h404gCnRBRvh9qViVfeiLFF3Trt67BjDJNyPviUqE4i3m1GXRcJxDm7xlwzdL680
+          o3HnqgOyVUks50LA9saj/A3/HAdx8L2poalZ/YlvwgCMgTx/VUjRdPoSUYokfQQl
+          swIDAQAB
+          -----END PUBLIC KEY-----

@@ -1,0 +1,21 @@
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 4
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: false
+    fetch-registry: false
+
+spring:
+  application:
+    name: DISCOVERY-SERVER
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 1.0

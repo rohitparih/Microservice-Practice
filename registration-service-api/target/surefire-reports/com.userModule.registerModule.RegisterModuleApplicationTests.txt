@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.userModule.registerModule.RegisterModuleApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.457 s <<< FAILURE! - in com.userModule.registerModule.RegisterModuleApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalArgumentException: Cannot instantiate interface org.springframework.boot.BootstrapRegistryInitializer : org.springframework.cloud.netflix.eureka.config.EurekaConfigServerBootstrapper
+Caused by: java.lang.NoClassDefFoundError: com/netflix/discovery/shared/resolver/EurekaEndpoint
+Caused by: java.lang.ClassNotFoundException: com.netflix.discovery.shared.resolver.EurekaEndpoint
+

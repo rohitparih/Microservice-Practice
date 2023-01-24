@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Api-Gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Discovery-Server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Discovery-Server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Idgenerator-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Idgenerator-Service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Profile-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Profile-Service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-constants/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authorization-server-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authorization-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/global-exception-handler/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/registration-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/registration-service-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sm-category-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sm-comment-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sm-post-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sm-tag-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/api-constants/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/api-constants/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/authorization-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/authorization-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/cloud-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/cloud-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/config-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/discovery-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/discovery-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/employee-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/employee-service-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/organisation-user-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/organisation-user-service-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Portal/Portal-Backend/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

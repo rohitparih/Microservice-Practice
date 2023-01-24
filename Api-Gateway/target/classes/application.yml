@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    config:
+      enabled: true
+  config:
+    import: optional:configserver:http://localhost:2000

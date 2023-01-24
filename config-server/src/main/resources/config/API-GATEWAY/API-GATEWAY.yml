@@ -1,0 +1,73 @@
+server:
+  port: 7000
+
+spring:
+  application:
+    name: API-GATEWAY
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://localhost:9411
+  cloud:
+    gateway:
+      routes:
+        - id: registration-service-api
+          uri: lb://REGISTRATION-SERVICE
+          predicates:
+            - Path=/api/registration/**
+          filters:
+            - AddRequestHeader=authorization-key, $2a$10$NyPXgy6KHrLTA1G9MUUTF.0H8d5R3jbYp0R9n0hewfireuixMGtKS
+
+        - id: discovery-server
+          uri: http://localhost:8761
+          predicates:
+            - Path=/eureka/web
+          filters:
+            - SetPath=/
+
+        - id: discovery-server-static
+          uri: http://localhost:8761
+          predicates:
+            - Path=/eureka/**
+
+        - id: sm-category-service-api
+          uri: lb://SM-CATEGORY-SERVICE-API
+          predicates:
+            - Path=/sm-category/**
+          filters:
+            - AddRequestHeader=authorization-key, $2a$10$SiVm8UP7Ih5v8q3qPmOZhugzCRubRj4GWuEdzDsTHt2oGae/ftW8q
+
+        - id: sm-post-service-api
+          uri: lb://SM-POST-SERVICE-API
+          predicates:
+            - Path=/api/sm-post/**
+          filters:
+            - AddRequestHeader=authorization-key, $2a$10$SiVm8UP7Ih5v8q3qPmOZhugzCRubRj4GWuEdzDsTHt2oGae/ftW8q
+
+        - id: sm-tag-service-api
+          uri: lb://SM-TAG-SERVICE-API
+          predicates:
+            - Path=/api/sm-tags/**
+          filters:
+            - AddRequestHeader=authorization-key, $2a$10$SiVm8UP7Ih5v8q3qPmOZhugzCRubRj4GWuEdzDsTHt2oGae/ftW8q
+
+        - id: authorization-server
+          uri: lb://AUTHORIZATION-SERVER
+          predicates:
+            - Path=/oauth/**
+          filters:
+            - AddRequestHeader=gateway, world
+
+eureka:
+  instance:
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 4
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+logging:
+  level:
+    root: info
+    org.springframework.cloud.gateway.route.RouteDefinitionLocator: INFO
+    org.springframework.cloud: TRACE

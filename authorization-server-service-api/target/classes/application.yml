@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: AUTHORIZATION-SERVER
+  cloud:
+    config:
+      enabled: true
+  config:
+    import: optional:configserver:http://localhost:2000
